@@ -1,0 +1,23 @@
+{
+  "name": "quizzerion",
+  "version": "1.0.0",
+  "description": "Simple website for Quizzerion",
+  "main": "app.js",
+  "scripts": {
+    "test": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amiya-1998/Quizzerion.git"
+  },
+  "author": "Amiya, Bishal",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/amiya-1998/Quizzerion/issues"
+  },
+  "homepage": "https://github.com/amiya-1998/Quizzerion#readme",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.3"
+  }
+}

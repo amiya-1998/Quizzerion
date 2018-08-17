@@ -1,0 +1,32 @@
+<% include ./partials/header %>
+
+<div class="ui main text container">
+  <div class="ui top attached segment">
+    <div class="ui divided items">
+
+      <% if(articles.length === 0) { %>
+        <div class="ui header">No articles Found</div>
+      <% } else { %>
+        <% articles.forEach(function(article) { %>
+          <div class="item">
+            <div class="image">
+              <img src="<%= article.image %>">
+            </div>
+            <div class="content">
+              <a href="/articles/<%= article._id %>" class="header"><%= article.title %></a>
+              <div class="description">
+                <p><%- article.description.substring(0, 100) %>...</p>
+              </div>
+              <div class="extra">
+                <a href="/articles/<%= article._id %>" class="ui violet basic button">Read More <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+              </div>
+            </div>
+          </div>
+        <% }) %>
+      <% } %>
+
+    </div>
+  </div>
+</div>
+
+<% include ./partials/footer %>

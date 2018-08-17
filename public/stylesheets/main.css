@@ -1,0 +1,74 @@
+
+.bigIcon i.icon {
+  font-size: 2em;
+}
+
+div#content.ui.segment {
+  border-radius: 0;
+  border: 0;
+  box-shadow: none;
+  margin: 0;
+}
+
+.ui.menu {
+  border-radius: 0;
+}
+
+.ui.segment {
+  border-radius: 0;
+}
+
+.ui.grid {
+  margin-right: 0;
+}
+
+.ui.grid>.column:not(.row), .ui.grid>.row>.column {
+  padding-right: 0;
+}
+
+.ui.input>input {
+  border-radius: 0;
+}
+
+#content {
+  min-height: 100px;
+}
+.ui.grid {
+	padding: 0 !important;
+}
+.pushable.segment {
+	margin: 0 !important;
+}
+
+a.bigIcon:hover{
+  color: #C0C0C0;
+  border: 1px solid #C0C0C0;
+  border-top: none;
+  border-bottom: none;
+  border-left: none;
+  font-weight: bold;
+}
+
+a.border:hover{
+  color: #C0C0C0;
+  border: 1px solid #C0C0C0;
+  border-top: none;
+  border-bottom: none;
+  font-weight: bold;
+}
+
+#showcase{
+  min-height: 400px;
+  background: url('https://www.marketingdonut.co.uk/sites/default/files/questions-that-research-could-help-you-answer-366899399.jpg') no-repeat;
+  text-align: center;
+  color: #ffffff;
+  margin: 0 auto;
+  width: 100%;
+}
+
+footer{
+  width: 100%;
+}
+#deleteButton {
+  display: inline-block;
+}
