@@ -1,5 +1,38 @@
-<% include ./partials/header %>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizzerion</title>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500" rel="stylesheet">
+    <link rel="stylesheet" href="../stylesheets/landing.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>Enjoy Quizzing</h1>
+    </div>
+    <div class="welcome-section content-hidden content">
+       <div class="content-wrap">
+         <div class="fly-in-text">
+           <h1 id="text">QUIZZERION</h1>
+           <a href="/articles" class="enter-button">ENTER</a>
+         </div>
+       </div>
+    </div>
+    <script type="text/javascript">
+      $(function(){
+        var welcomeSection = $('.welcome-section'),
+            enter = welcomeSection.find('.enter-button');
 
-  <h1>This is landing Page</h1>
+            setTimeout(function(){
+              welcomeSection.removeClass('content-hidden');
+            },800);
 
-<% include ./partials/footer %>
+            enter.on('click',function(e){
+              welcomeSection.addClass('content-hidden').fadeOut();
+            });
+      });
+    </script>
+  </body>
+</html>
