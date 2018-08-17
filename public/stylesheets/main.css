@@ -1,6 +1,9 @@
-
 .bigIcon i.icon {
   font-size: 2em;
+}
+
+.selected{
+  border-bottom: 5px solid #e8491d;
 }
 
 div#content.ui.segment {
@@ -40,20 +43,22 @@ div#content.ui.segment {
 	margin: 0 !important;
 }
 
-a.bigIcon:hover{
-  color: #C0C0C0;
-  border: 1px solid #C0C0C0;
-  border-top: none;
-  border-bottom: none;
-  border-left: none;
+.ui.inverted.menu a.item.border, .ui.inverted.menu a.item.bigIcon{
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: lighter;
+}
+
+.ui.inverted.menu a.bigIcon:hover{
+  color: #e8491d;
+  border-right: 1px solid #e8491d;
   font-weight: bold;
 }
 
-a.border:hover{
-  color: #C0C0C0;
-  border: 1px solid #C0C0C0;
-  border-top: none;
-  border-bottom: none;
+.ui.inverted.menu a.item.border:hover{
+  color: #e8491d;
+  border-left: 1px solid #e8491d;
+  border-right: 1px solid #e8491d;
   font-weight: bold;
 }
 
@@ -71,4 +76,8 @@ footer{
 }
 #deleteButton {
   display: inline-block;
+}
+
+.ui.inverted.menu{
+  background: #35424a;
 }
