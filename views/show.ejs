@@ -1,5 +1,19 @@
 <% include ./partials/header %>
 
-  <h1>This are landing Page</h1>
+<div class="ui main text container segment">
+  <div class="ui huge header centered"><%= article.title %></div>
+  <div class="ui top attached">
+    <div class="item">
+      <img src="<%= article.image %>" class="ui centered rounded image" alt="No image">
+
+      <div class="ui segment description">
+        <p><%= article.description %></p>
+      </div>
+
+      <a href="<%= article.link %>" class="ui green basic button">Contest Link</a>
+      </form>
+    </div>
+  </div>
+</div>
 
 <% include ./partials/footer %>

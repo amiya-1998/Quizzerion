@@ -7,22 +7,23 @@
       <% if(articles.length === 0) { %>
         <div class="ui header">No articles Found</div>
       <% } else { %>
-        <% articles.forEach(function(article) { %>
+        <% for(let i = 0; i < articles.length; i++) { var date = new Date(articles[i].updated_at).toDateString()%>
           <div class="item">
             <div class="image">
-              <img src="<%= article.image %>">
+              <img src="<%= articles[i].image %>">
             </div>
             <div class="content">
-              <a href="/articles/<%= article._id %>" class="header"><%= article.title %></a>
+              <a href="/articles/<%= i %>" class="header"><%= articles[i].title %></a>
+              <div class="header right floated"><%= date %></div>
               <div class="description">
-                <p><%- article.description.substring(0, 100) %>...</p>
+                <p><%- articles[i].description.substring(0, 100) %>...</p>
               </div>
               <div class="extra">
-                <a href="/articles/<%= article._id %>" class="ui violet basic button">Read More <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                <a href="/articles/<%= i %>" class="ui violet basic button">Read More <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
               </div>
             </div>
           </div>
-        <% }) %>
+        <% } %>
       <% } %>
 
     </div>
