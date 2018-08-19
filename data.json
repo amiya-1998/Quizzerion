@@ -6,7 +6,7 @@
       "description": "Test",
       "link": "https://www.google.co.in",
       "location": "Bhubaneswar",
-      "updated_at": "2018-01-01"
+      "updated_at": "01-01-2018"
     },
     {
       "title": "Test2",
@@ -14,7 +14,7 @@
       "description": "Test2",
       "link": "https://www.google.co.in",
       "location": "Delhi",
-      "updated_at": "2018-01-05"
+      "updated_at": "03-05-2018"
     }
   ]
 }

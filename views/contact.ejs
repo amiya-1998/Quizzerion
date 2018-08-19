@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Quizzerion</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" />
+  <link rel="stylesheet" href="/stylesheets/main.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-sm navbar-light bg-white">
+    <div class="container">
+      <a href="/" class="navbar-brand">Quizzerion</a>
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#navNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navNavbar">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a href="/" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="/about" class="nav-link">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a href="/articles" class="nav-link">Articles</a>
+          </li>
+          <li class="nav-item active">
+            <a href="/contact" class="nav-link a">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header id="page-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 m-auto text-center">
+          <h1>Contact Us</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum tempora, officia consequuntur soluta voluptatum, at labore praesentium illo animi. Minus.</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card p-4 h-100">
+            <div class="card-body">
+              <h4>Get In Touch</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, mollitia?</p>
+              <h4>Email</h4>
+              <p>test@test.com</p>
+              <h4>Phone</h4>
+              <p>5555555555</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-8">
+          <div class="card p-4 h-100">
+            <div class="card-body">
+              <h3 class="text-center">Please Fill Out This Form To Contact Us</h3>
+              <hr>
+              <form action="/mail" method="POST">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <input type="text" name="name" class="form-control" placeholder="Name">
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <input type="email" name="email" class="form-control" placeholder="Email">
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <textarea type="email" name="message" rows="3" class="form-control" placeholder="Message"></textarea>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <input type="submit" class="btn btn-outline-danger btn-block">
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
