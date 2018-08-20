@@ -11,7 +11,7 @@ app.set('view engine', 'ejs');
 app.use(express.static(__dirname + '/public'));
 
 app.get('/', (req, res) => {
-  res.render('index');
+  res.render('landing');
 });
 
 app.get('/articles', (req, res) => {
@@ -20,10 +20,6 @@ app.get('/articles', (req, res) => {
 
 app.get('/articles/:id', (req, res) => {
     res.render('show', {article: data[req.params.id]});
-});
-
-app.get('/about', (req, res) => {
-  res.render('about');
 });
 
 app.get('/contact', (req, res) => {

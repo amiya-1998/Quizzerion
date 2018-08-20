@@ -9,103 +9,48 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" />
   <link rel="stylesheet" href="/stylesheets/main.css">
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+  <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
 </head>
 <body>
 
-  <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-    <div class="container">
-      <a href="/" class="navbar-brand">Quizzerion</a>
-      <button class="navbar-toggler" data-toggle="collapse" data-target="#navNavbar">
+  <nav class="navbar navbar-expand-md navbar-light fixed-top bg-white">
+      <a class="navbar-brand" href="/">Quizzerion</a>
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navNavbar">
+      <div class="navbar-collapse collapse" id="navbarCollapse" style="">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a href="/" class="nav-link">Home</a>
+            <a class="nav-link a" href="/">Home</a>
           </li>
           <li class="nav-item">
-            <a href="/about" class="nav-link">About Us</a>
+            <a class="nav-link" href="/articles">Articles</a>
           </li>
           <li class="nav-item">
-            <a href="/articles" class="nav-link">Articles</a>
-          </li>
-          <li class="nav-item">
-            <a href="/contact" class="nav-link">Contact Us</a>
+            <a class="nav-link" href="/contact">Contact us</a>
           </li>
         </ul>
+        <form class="form-inline mt-2 mt-md-0">
+          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
       </div>
-    </div>
-  </nav>
+    </nav>
 
 
-<!-- Slider -->
-<section id="showcase">
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-      <li data-target="myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="myCarousel" data-slide-to="1"></li>
-      <li data-target="myCarousel" data-slide-to="2"></li>
-    </ol>
-    <div class="carousel-inner">
-      <div class="carousel-item carousel-image-1 active">
-        <div class="container">
-          <div class="carousel-caption d-none d-sm-block text-right mb-5">
-            <h1 class="display-3">Heading One</h1>
-            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus ipsa quae, atque vel recusandae repellendus ex beatae. Dignissimos, maiores, molestias.</p>
-            <a href="/articles" class="btn btn-danger btn-lg">See All Articles</a>
-          </div>
-        </div>
-      </div>
+<!-- Header Section -->
 
-      <div class="carousel-item carousel-image-2">
-        <div class="container">
-          <div class="carousel-caption d-none d-sm-block mb-5">
-            <h1 class="display-3">Heading Two</h1>
-            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus ipsa quae, atque vel recusandae repellendus ex beatae. Dignissimos, maiores, molestias.</p>
-            <a href="/articles" class="btn btn-primary btn-lg">See All Articles</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="carousel-item carousel-image-3">
-        <div class="container">
-          <div class="carousel-caption d-none d-sm-block text-right mb-5">
-            <h1 class="display-3">Heading Three</h1>
-            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus ipsa quae, atque vel recusandae repellendus ex beatae. Dignissimos, maiores, molestias.</p>
-            <a href="/articles" class="btn btn-success btn-lg">See All Articles</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <a href="#myCarousel" data-slide="prev" class="carousel-control-prev"><span class="carousel-control-prev-icon"></span></a>
-    <a href="#myCarousel" data-slide="next" class="carousel-control-next"><span class="carousel-control-next-icon"></span></a>
-  </div>
-</section>
-
-<!-- Home Icon Section -->
-
-<section id="home-icon" class="py-5">
+<header id="header">
   <div class="container">
     <div class="row">
-      <div class="col-md-4 mb-4 text-center">
-        <i class="fa fa-cog mb-2"></i>
-        <h3>Turning Gears</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, consectetur!</p>
-      </div>
-      <div class="col-md-4 mb-4 text-center">
-        <i class="fa fa-cloud mb-2"></i>
-        <h3>Sending Data</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, consectetur!</p>
-      </div>
-      <div class="col-md-4 mb-4 text-center">
-        <i class="fa fa-cart-plus mb-2"></i>
-        <h3>Making Money</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, consectetur!</p>
+      <div class="col-md-6 m-auto text-center">
+        <h1>Latest Quizzes</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum tempora, officia consequuntur soluta voluptatum, at labore praesentium illo animi. Minus.</p>
       </div>
     </div>
   </div>
-</section>
+</header>
 
 <!-- Home Heading Section -->
 
@@ -139,122 +84,85 @@
   </div>
 </section>
 
-<!-- Video Play Section -->
 
-<!-- VIDEO PLAY SECTION -->
-<section id="video-play">
-  <div class="dark-overlay">
+<header id="page-header">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 mx-auto mt-4 text-center">
+        <h1>About Us</h1>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- About Section -->
+<section id="about" class="py-3">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus natus, dicta unde id ipsum quia repellendus totam earum! Ipsum quis illo, dolorem voluptatum, quia explicabo! Omnis accusantium, ullam facere tempore?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus natus, dicta unde id ipsum quia repellendus totam earum! Ipsum quis illo, dolorem voluptatum, quia explicabo! Omnis accusantium, ullam facere tempore?</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Our Team -->
+<section id="team" class="p-4">
+  <div class="container">
+    <h2 class="text-center text-white">Our Team</h2>
     <div class="row">
       <div class="col">
-        <div class="container p-5">
-          <a
-            href="#"
-            class="video"
-            data-video="https://www.youtube.com/embed/HnwsG9a5riA"
-            data-toggle="modal"
-            data-target="#videoModal"
-          >
-            <i class="fa fa-play"></i>
-          </a>
-          <h1>See What We Do</h1>
+        <div class="slider">
+          <div>
+            <div class="card">
+              <img src="stylesheets/img/image1.jpg" alt="Card image" class="card-img-top img-fluid">
+              <div class="card-body">
+                <h3 class="card-title">John Doe</h3>
+                <p class="card-text">Lorem ipsum dolor sit amet.</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="card">
+              <img src="stylesheets/img/image1.jpg" alt="Card image" class="card-img-top img-fluid">
+              <div class="card-body">
+                <h3 class="card-title">John Doe</h3>
+                <p class="card-text">Lorem ipsum dolor sit amet.</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="card">
+              <img src="stylesheets/img/image1.jpg" alt="Card image" class="card-img-top img-fluid">
+              <div class="card-body">
+                <h3 class="card-title">John Doe</h3>
+                <p class="card-text">Lorem ipsum dolor sit amet.</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="card">
+              <img src="stylesheets/img/image1.jpg" alt="Card image" class="card-img-top img-fluid">
+              <div class="card-body">
+                <h3 class="card-title">John Doe</h3>
+                <p class="card-text">Lorem ipsum dolor sit amet.</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- PHOTO GALLERY -->
-<section id="gallery" class="py-5">
-  <div class="container">
-    <h1 class="text-center">Photo Gallery</h1>
-    <p class="text-center">Check out our photos</p>
-    <div class="row mb-4">
-      <div class="col-md-4">
-        <a href="http://lorempixel.com/560/560/business/1" data-toggle="lightbox" data-gallery="img-gallery">
-          <img src="http://lorempixel.com/600/600/business/1" class="img-fluid">
-        </a>
-      </div>
-      <div class="col-md-4">
-        <a href="http://lorempixel.com/560/560/business/2" data-toggle="lightbox" data-gallery="img-gallery">
-          <img src="http://lorempixel.com/600/600/business/2" class="img-fluid">
-        </a>
-      </div>
-      <div class="col-md-4">
-        <a href="http://lorempixel.com/560/560/business/3" data-toggle="lightbox" data-gallery="img-gallery">
-          <img src="http://lorempixel.com/600/600/business/3" class="img-fluid">
-        </a>
-      </div>
-    </div>
-
-    <div class="row mb-4">
-      <div class="col-md-4">
-        <a href="http://lorempixel.com/560/560/business/4" data-toggle="lightbox" data-gallery="img-gallery">
-          <img src="http://lorempixel.com/600/600/business/4" class="img-fluid">
-        </a>
-      </div>
-      <div class="col-md-4">
-        <a href="http://lorempixel.com/600/600/business/5" data-toggle="lightbox" data-gallery="img-gallery">
-          <img src="http://lorempixel.com/600/600/business/5" class="img-fluid">
-        </a>
-      </div>
-      <div class="col-md-4">
-        <a href="http://lorempixel.com/560/560/business/6" data-toggle="lightbox" data-gallery="img-gallery">
-          <img src="http://lorempixel.com/600/600/business/6" class="img-fluid">
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Newsletter Section -->
-<section id="newsletter" class="text-center p-5 bg-dark text-white">
-  <div class="container">
-    <div class="row">
-      <div class="col">
-        <h1>SignUp For Our Newsletter</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere eligendi magni corporis debitis ullam amet laudantium praesentium porro aliquam soluta.</p>
-        <form action="" class="form-inline justify-content-center">
-          <label class="sr-only" for="name">Name</label>
-          <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" placeholder="Enter Name">
-          <label for="name" class="sr-only">Email</label>
-          <input type="email" class="form-control mb-2 mr-sm-2 mb-sm-0" placeholder="Enter Email">
-          <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Footer -->
-
-<footer id="main-footer" class="text-center p-4">
-  <div class="container">
-    <div class="row">
-      <div class="col">
-        <p>Copyright &copy; Quizzerion</p>
-      </div>
-    </div>
-  </div>
-
-</footer>
-
-<!-- Video Modal -->
-<div class="modal fade" id="videoModal">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-body">
-        <button class="close" data-dismiss="modal"><span>&times;</span></button>
-        <iframe src="" height="350" width="100%" frameborder="0" allowfullscreen></iframe>
-      </div>
-    </div>
-  </div>
-</div>
-
-
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

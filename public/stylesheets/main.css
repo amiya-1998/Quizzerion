@@ -1,6 +1,12 @@
 body {
   overflow-x: hidden; }
 
+  #header {
+    margin-top: 55px;
+    height: 100vh;
+    background-color: #000;
+  }
+
   nav a {
     opacity: 0.7;
     border: 1px solid white;
@@ -84,6 +90,7 @@ footer#main-footer {
   color: #fff; }
 
 #page-header {
+  margin-top: 55px;
   height: 200px;
   background: url(img/image1.jpg);
   background-position: 0 -360px;
@@ -91,6 +98,10 @@ footer#main-footer {
   color: white;
   border-bottom: 1px #eee solid;
   padding-top: 50px; }
+
+  #team {
+    background-color: #000;
+  }
 
 #about img {
   margin-top: -50px; }
@@ -118,8 +129,3 @@ footer#main-footer {
   -o-filter: blur(0px);
   -ms-filter: blur(0px);
   filter: blur(0); }
-
-@media (min-width: 768px) {
-  .row.equal {
-    display: flex;
-    flex-wrap: wrap; } }
