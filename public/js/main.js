@@ -22,6 +22,8 @@ $('.slider').slick({
   slidesToShow: 3,
   speed: 1500,
   index: 2,
+  autoplay: true,
+  swipeToSlide: true,
   responsive: [
     {
       breakpoint: 768,
