@@ -1,5 +1,16 @@
 html, body {
+  opacity: 0;
+  animation: showAll forwards 0.3s 0.2s linear;
   overflow-x: hidden;
+}
+
+@keyframes showAll {
+  0%{
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 #header {
