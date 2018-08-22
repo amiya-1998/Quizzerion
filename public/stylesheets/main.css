@@ -1,12 +1,13 @@
-body {
+html, body {
   overflow-x: hidden;
 }
 
 #header {
-  margin-top: 55px;
+  margin-top: 50px;
   height: 100vh;
   background-color: #000;
 }
+
 
 nav a {
   opacity: 0.7;
@@ -39,34 +40,12 @@ nav a.a:hover {
   border-bottom: 1px solid red;
 }
 
-.carousel-item {
-  height: 450px;
-}
-
-.carousel-image-1 {
-  background: url("img/image1.jpg");
-  background-size: cover;
-}
-
-.carousel-image-2 {
-  background: url("img/image2.jpg");
-  background-size: cover;
-}
-
-.carousel-image-3 {
-  background: url("img/image3.jpg");
-  background-size: cover;
-}
-
-.fa {
-  font-size: 55px;
-}
-
 #home-heading {
   position: relative;
   min-height: 200px;
   background: url(img/lights.jpg);
   background-attachment: fixed;
+  background-position: 0 300px;
   background-repeat: no-repeat;
   text-align: center;
   color: #fff;
@@ -102,7 +81,7 @@ footer#main-footer {
 }
 
 #page-header {
-  margin-top: 55px;
+  margin-top: 50px;
   height: 200px;
   background: url(img/image1.jpg);
   background-position: 0 -360px;
@@ -143,4 +122,18 @@ footer#main-footer {
   -o-filter: blur(0px);
   -ms-filter: blur(0px);
   filter: blur(0);
+}
+
+.navbar {
+  box-shadow: 2px 0px 2px rgba(0, 0, 0, 0.5),
+              3px 0px 3px rgba(0, 0, 0, 0.3),
+              4px 0px 4px rgba(0, 0, 0, 0.2),
+              5px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5),
+              3px 3px 3px rgba(0, 0, 0, 0.3),
+              4px 4px 4px rgba(0, 0, 0, 0.2),
+              5px 5px 5px rgba(0, 0, 0, 0.1);
 }
