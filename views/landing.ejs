@@ -8,11 +8,9 @@
   <title>Quizzerion</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.css" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" />
-  <link rel="stylesheet" href="/stylesheets/main.css">
   <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
   <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+  <link rel="stylesheet" href="/stylesheets/main.css">
 </head>
 
 <body>
@@ -24,21 +22,21 @@
     </button>
     <div class="navbar-collapse collapse" id="navbarCollapse" style="">
       <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
+        <li class="nav-item active mr-2">
           <a class="nav-link a" href="/">Home</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item mr-2">
           <a class="nav-link" href="/articles">Articles</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item mr-2">
           <a class="nav-link" href="/contact">Contact us</a>
         </li>
       </ul>
-      <form action="/articles" class="form-inline mt-2 mt-md-0 ml-3">
-        <div class="ui transparent icon input">
-          <input type="text" placeholder="Search...">
-          <i class="search link icon"></i>
+      <form action="/articles" class="form-inline mt-2 mt-md-0 ml-3 mr-3" method="get">
+        <div class="ui transparent input">
+          <input type="text" name="query" placeholder="Search...">
         </div>
+        <button type="submit" class="btn"><i class="search link icon"></i></button>
       </form>
     </div>
   </nav>
@@ -47,30 +45,20 @@
   <!-- Header Section -->
 
   <header id="header">
-    <div class="container">
-      <div class="row d-flex justify-content-center align-items-center">
-        <div class="col-md-6 text-center" id="heading">
-          <h1>Latest Quizzes</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum tempora, officia consequuntur soluta voluptatum, at labore praesentium illo animi. Minus.</p>
-        </div>
-      </div>
-    </div>
+
   </header>
 
   <!-- Home Heading Section -->
 
-  <section id="home-heading" class="p-5">
-    <div class="dark-overlay">
+  <header id="home-header">
+    <div class="container">
       <div class="row">
-        <div class="col">
-          <div class="container pt-5">
-            <h1>Are You Ready To Get Started ?</h1>
-            <p class="lead d-none d-md-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim ipsam ratione delectus. Labore quidem mollitia modi beatae nisi quia, tempora.</p>
-          </div>
+        <div class="col-md-6 mx-auto mt-4 text-center">
+          <h1>About Us</h1>
         </div>
       </div>
     </div>
-  </section>
+  </header>
 
   <!-- Info Section -->
 
@@ -101,7 +89,7 @@
   </header>
 
   <!-- About Section -->
-  <section id="about" class="py-3">
+  <section id="about" class="py-4">
     <div class="container">
       <div class="row">
         <div class="col-12">
@@ -115,14 +103,14 @@
 
 
   <!-- Our Team -->
-  <section id="team" class="bg-dark p-4">
+  <section id="team" class="bg-white p-4">
     <div class="container">
-      <h2 class="text-center text-white">Our Team</h2>
+      <h2 class="text-center">Our Team</h2>
       <div class="row">
         <div class="col">
           <div class="slider">
             <div>
-              <div class="card">
+              <div class="card my-4">
                 <img src="stylesheets/img/image1.jpg" alt="Card image" class="card-img-top img-fluid">
                 <div class="card-body">
                   <h3 class="card-title">John Doe</h3>
@@ -131,7 +119,7 @@
               </div>
             </div>
             <div>
-              <div class="card">
+              <div class="card my-4">
                 <img src="stylesheets/img/image1.jpg" alt="Card image" class="card-img-top img-fluid">
                 <div class="card-body">
                   <h3 class="card-title">John Doe</h3>
@@ -140,7 +128,7 @@
               </div>
             </div>
             <div>
-              <div class="card">
+              <div class="card my-4">
                 <img src="stylesheets/img/image1.jpg" alt="Card image" class="card-img-top img-fluid">
                 <div class="card-body">
                   <h3 class="card-title">John Doe</h3>
@@ -149,7 +137,7 @@
               </div>
             </div>
             <div>
-              <div class="card">
+              <div class="card my-4">
                 <img src="stylesheets/img/image1.jpg" alt="Card image" class="card-img-top img-fluid">
                 <div class="card-body">
                   <h3 class="card-title">John Doe</h3>

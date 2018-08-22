@@ -6,16 +6,22 @@ data = data.data;
 
 data.sort((a,b) => new Date(b.updated_at).getTime() - new Date(a.updated_at).getTime());
 
-app.use(bodyParser.urlencoded({extended: true}));
 app.set('view engine', 'ejs');
 app.use(express.static(__dirname + '/public'));
+app.use(bodyParser.urlencoded({extended: true}));
 
 app.get('/', (req, res) => {
   res.render('landing');
 });
 
 app.get('/articles', (req, res) => {
-  res.render('articles', {articles: data});
+  if(req.query.query == null) {
+    res.render('articles', {articles: data});
+  } else {
+    var foundArticles = data.filter(({location}) => location === req.query.query);
+    console.log(foundArticles);
+    res.render('articles', {articles: foundArticles});
+  }
 });
 
 app.get('/articles/:id', (req, res) => {
