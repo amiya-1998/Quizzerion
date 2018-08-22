@@ -32,6 +32,11 @@ app.get('/contact', (req, res) => {
   res.render('contact');
 });
 
+// Change it to show no such website exists
+app.get('*', (req, res) => {
+  res.send("No such site exists");
+})
+
 // POST ROUTE TO IMPLEMENT NODEMAILER
 app.post('/mail', (req, res) => {
   console.log(req.body.name);
