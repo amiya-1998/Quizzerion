@@ -133,3 +133,98 @@ button {
   display: inline;
   background-color: transparent;
 }
+
+/* Search button */
+
+#form-new{
+  width: 35px;
+  height: 30px;
+  border-radius: 30px;
+  margin-right: -15px !important;
+  transition: all 200ms ease-out;
+  border: 1px solid rgb(72, 214, 52);
+  outline: none;
+  padding-left: 15px
+}
+
+#form-new::placeholder{
+  color: white;
+}
+
+#form-new:focus{
+  width: 200px;
+  box-shadow: none;
+}
+
+#form-new:hover{
+  width: 200px;
+  box-shadow: none;
+}
+
+#navbtn{
+  position: relative;
+}
+
+.search.link.icon{
+  margin-right: -8px;
+}
+
+#searchbutton{
+  height: 30px;
+  width: 40px;
+  margin: 0;
+  background: none;
+  padding: 1px;
+  border: 1px solid rgb(72, 214, 52);
+  border-radius: 0 12px 12px 0;
+  outline: none;
+}
+
+#searchbutton:hover{
+  background: #56ab2f;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #a8e063, #56ab2f);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #a8e063, #56ab2f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: white;
+  transition: all 200ms ease-out;
+}
+
+#searchbutton::before{
+  content: "";
+  width: 15px;
+  height: 15px;
+  background: rgb(255, 255, 255);
+  position: absolute;
+  top: 0; left: 0;
+  border-radius: 0 100% 0 0;
+  border-top: 1px solid rgb(72, 214, 52);
+  border-right: 1px solid rgb(72, 214, 52);
+}
+
+#searchbutton::after{
+  content: "";
+  width: 15px;
+  height: 15px;
+  background: rgb(255, 255, 255);
+  position: absolute;
+  top: 15px; left: 0;
+  border-radius: 0 0 100% 0;
+  border-right: 1px solid rgb(72, 214, 52);
+  border-bottom: 1px solid rgb(72, 214, 52);
+}
+
+@media (max-width: 768px) {
+  form{
+    display: inline;
+  }
+  #form-new{
+    width: 86%;
+  }
+  #form-new:hover{
+    width: 86%;
+  }
+  #form-new:focus{
+    width: 86%;
+  }
+}
+
+/* -------------------------------- */
