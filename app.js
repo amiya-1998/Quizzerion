@@ -3,7 +3,9 @@ var app = express();
 var bodyParser = require('body-parser');
 var data = require('./data.json');
 var fuse = require('fuse.js');
+var questions = require('./questions.json');
 data = data.data;
+questions = questions.questions;
 
 data.sort((a,b) => new Date(b.updated_at).getTime() - new Date(a.updated_at).getTime());
 
@@ -35,6 +37,10 @@ app.get('/articles/:id', (req, res) => {
 app.get('/contact', (req, res) => {
   res.render('contact');
 });
+
+app.get('/quiz', (req, res) => {
+  res.render('quiz', {questions: questions});
+})
 
 // Change it to show no such website exists
 app.get('*', (req, res) => {

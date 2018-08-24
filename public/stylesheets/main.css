@@ -1,3 +1,4 @@
+
 html, body {
   opacity: 0;
   animation: showAll forwards 0.3s 0.2s linear;
@@ -13,8 +14,12 @@ html, body {
   }
 }
 
+/* Header Styles */
+
 #header {
-  background: #fff;
+  background-image: url('/stylesheets/img/wallpaper1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -85,17 +90,33 @@ html, body {
   }
 }
 
+/* ------------------------------------ */
+
+/* Navbar Styles */
+
 nav.navbar {
   padding-top: 0;
   padding-bottom: 0
 }
 
+.navbar {
+  box-shadow: 2px 0px 2px rgba(0, 0, 0, 0.5),
+              3px 0px 3px rgba(0, 0, 0, 0.3),
+              4px 0px 4px rgba(0, 0, 0, 0.2),
+              5px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logoImage {
+  object-fit: contain;
+  width: 180px;
+  height: 50px;
+}
 
 nav a {
   opacity: 0.7;
   border: 1px solid white;
   color: black;
-  transition: 1s opacity;
+  transition: 0.7s All;
 }
 
 nav a.navbar-brand {
@@ -180,6 +201,7 @@ nav a.a:hover {
 
 }
 
+/* ------------------------------------ */
 
 footer#main-footer {
   background-color: #000;
@@ -211,6 +233,8 @@ footer#main-footer {
   margin-top: -50px;
 }
 
+/* Slick Slider Styles */
+
 .slider {
   margin: 5px 0;
   padding: 1px 0;
@@ -240,12 +264,7 @@ footer#main-footer {
   filter: blur(0);
 }
 
-.navbar {
-  box-shadow: 2px 0px 2px rgba(0, 0, 0, 0.5),
-              3px 0px 3px rgba(0, 0, 0, 0.3),
-              4px 0px 4px rgba(0, 0, 0, 0.2),
-              5px 0px 5px rgba(0, 0, 0, 0.1);
-}
+/* ------------------------- */
 
 .card {
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5),
@@ -268,14 +287,8 @@ button {
   height: 250px;
 }
 
-.logoImage {
-  object-fit: contain;
-  width: 180px;
-  height: 50px;
-}
-
 #articlesSearch {
-  margin-top: 55px;
+  margin-top: 75px;
   background: #ece9e6;
   background: -webkit-linear-gradient(to left, #ece9e6, #ffffff);
   background: linear-gradient(to left, #ece9e6, #ffffff);
@@ -285,4 +298,14 @@ button {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+}
+
+#about {
+  height: 30vh;
+  margin-bottom: 0;
+}
+
+#team {
+  height: 50%;
+  margin-top: 0;
 }
