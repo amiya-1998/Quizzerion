@@ -30,20 +30,15 @@
         </li>
       </ul>
       <form action="/articles" class="form-inline mt-2 mt-md-0 ml-3 mr-3" method="get">
-<<<<<<< HEAD
         <div class="ui transparent input" id="search">
           <input type="text" name="query" placeholder="Search..." autocomplete="off">
-=======
-        <input id="form-new" type="text" name="query" placeholder="Search...">
-        <div id="navbtn">
-          <button id="searchbutton" type="submit" class="btn"><i class="search link icon"></i></button>
->>>>>>> f50052a792b00f00e67419d0554679d8d4b0a0af
         </div>
+        <button type="submit" class="btn"><i class="search link icon"></i></button>
       </form>
     </div>
   </nav>
 
-  <header id="page-header">
+  <!-- <header id="page-header">
     <div class="container">
       <div class="row">
         <div class="col-md-6 m-auto text-center">
@@ -52,11 +47,28 @@
         </div>
       </div>
     </div>
-  </header>
+  </header> -->
+
+
+  <!-- Search Bar -->
+
+  <div class="container jumbotron" id="articlesSearch">
+    <div class="row" id="headingRight">
+      <div>
+        <h1>Search Quizzes by Title or Location</h1>
+      </div>
+      <form action="/articles" class="form-inline mt-2 mt-md-0 ml-3 mr-3" method="get">
+        <div class="ui transparent input" id="search">
+          <input type="text" name="query" placeholder="Search..." autocomplete="off" id="searchTerm">
+        </div>
+        <button type="submit" class="btn" id="searchButton"><i class="search link icon"></i></button>
+      </form>
+    </div>
+  </div>
 
   <!-- Articles Section -->
 
-  <section id="articles" class="py-3">
+  <section id="articles" class="py-3 mt-2">
     <div class="container">
       <div class="row">
         <% if(articles.length === 0) { %>
@@ -69,7 +81,7 @@
             <% for(let i = 0; i < articles.length; i++) { var date = new Date(articles[i].updated_at).toDateString()%>
               <div class="col-md-4 mb-3">
                 <div class="card">
-                  <img src="<%= articles[i].image %>" alt="Card image" class="card-img-top img-fluid">
+                  <img src="<%= articles[i].image %>" alt="Card image" class="card-img-top img-fluid questionImage" max-width="40px" max-height="40px">
 
                   <div class="card-body">
                     <h3 class="card-title"><%= articles[i].title %></h3>
