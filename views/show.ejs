@@ -39,44 +39,72 @@
   </nav>
 
   <% var date = new Date(article.updated_at).toDateString(); %>
-  <div class="blog-wrapper section-padding-100 clearfix">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-lg-10">
-                  <div class="single-blog-area blog-style-2 mb-50 wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="1000ms">
-                                      <div class="row align-items-center">
-                                          <div class="col-12 col-md-2">
-                                              <div class="single-blog-thumbnail">
-                                                  <img src="<%= article.image %>" alt="">
-                                                  <div class="post-date">
-                                                      <a href="#">12 <span>march</span></a>
-                                                  </div>
-                                              </div>
-                                          </div>
-                                          <div class="col-12 col-md-10">
-                                              <!-- Blog Content -->
-                                              <div class="single-blog-content">
-                                                  <div class="line"></div>
-                                                  <h4><a href="#" class="post-headline">Party people in the house</a></h4>
-                                                  <a href="#" class="post-tag">Lifestyle</a>
-                                              </div>
-                                          </div>
-                                          <div class="col-12  col-md-10">
-                                            <p><%= article.description %></p>
-                                            <div class="post-meta">
-                                                <p>By <a href="#">james smith</a></p>
-                                                <p>3 comments</p>
-                                            </div>
-                                          </div>
-                                      </div>
-                                  </div>
-                </div>
-            </div>
-        </div>
-  </div>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-  </body>
-  </html>
+  <div class="container">
+      <div class="card" id="cardContainer">
+        <div class="card-header" id="cardHeading"><%= article.title %></div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <figure class="figure position-static centerObject">
+                <div class="modular">
+                  <img class="img-thumbnail img-fluid image" src="<%= article.image %>" alt="ALL MIGHT PLUS ULTRA">
+                </div>
+              </figure>
+            </div>
+            <div class="col-md-6">
+              <div class="card mx-auto w-100" id="details">
+                <ul class="list-group list-group-flush" id="detlist">
+                  <div class="row">
+                    <div class="col-6 marginExtendRight">
+                      <li class="list-group-item">Date: </li>
+                    </div>
+                    <div class="col-6 marginExtendLeft">
+                      <li class="list-group-item text-right"><%= article.updated_at %></li>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-6 marginExtendRight">
+                      <li class="list-group-item">Location: </li>
+                    </div>
+                    <div class="col-6 marginExtendLeft">
+                      <li class="list-group-item text-right"><%= article.location %></li>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-6 marginExtendRight">
+                      <li class="list-group-item">Organiser: </li>
+                    </div>
+                    <div class="col-6 marginExtendLeft">
+                      <li class="list-group-item text-right">Organiser</li>
+                    </div>
+                  </div>
+                </ul>
+                <div class="card-body centerObject" >
+                  <a href="<%= article.link %>" class="btn btn-outline-success" id="descbtn">Visit Official Site</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-body" id="desc">
+          <p class="card-text">Toshinori Yagi (八や木ぎ俊とし典のり Yagi Toshinori?),
+            most commonly known by his hero name, All Might (オールマイト Ōru Maito?),
+             is the tritagonist of My Hero Academia. All Might is the former No. 1
+             Hero who bore the title of the world's Symbol of Peace (平和の象徴 Heiwa
+             no Shōchō?). He teaches Foundational Hero Studies at U.A. High School.All
+              Might was the eighth holder of the One For All Quirk after receiving it
+              from Nana Shimura. He has since passed the torch to Izuku Midoriya, whom
+              he is grooming to be his successor. After using up all the embers of One
+              for All to defeat All For One, All Might retired and ended his era as the
+              world's greatest hero.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</body>
+</html>
