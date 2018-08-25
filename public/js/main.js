@@ -1,4 +1,4 @@
-$('.slider').slick({
+const slider = $('.slider').slick({
   centerMode: true,
   centerPadding: '60px',
   slidesToShow: 3,
@@ -6,6 +6,7 @@ $('.slider').slick({
   index: 2,
   autoplay: true,
   swipeToSlide: true,
+  dots: true,
   responsive: [
     {
       breakpoint: 768,
@@ -27,3 +28,13 @@ $('.slider').slick({
     }
   ]
 });
+
+slider.on('wheel', (function(e) {
+  e.preventDefault();
+
+  if (e.originalEvent.deltaY < 0) {
+    $(this).slick('slickNext');
+  } else {
+    $(this).slick('slickPrev');
+  }
+}));
