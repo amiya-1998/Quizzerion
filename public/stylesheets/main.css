@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:700|Work+Sans:600');
+
 
 html, body {
   opacity: 0;
@@ -17,9 +19,7 @@ html, body {
 /* Header Styles */
 
 #header {
-  background-image: url('/stylesheets/img/wallpaper1.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: linear-gradient(90deg,#6473f5,#4855e7)!important;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -29,15 +29,34 @@ html, body {
 }
 
 .contain {
+  opacity: 0;
+  background: linear-gradient(90deg,#6473f5,#4855e7)!important;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 5%;
+  box-shadow: 0 5px 36px rgba(0, 0, 0,.7);
+  animation: showContainer 1s 0.2s forwards;
+  object-fit: contain;
 }
 
-.logo {
-  height: 100px;
-  width: 100px;
+@keyframes showContainer {
+  0%{
+    background: linear-gradient(90deg,#6473f5,#4855e7)!important;
+    opacity: 0;
+  }
+  100% {
+    background: white;
+    opacity: 1;
+  }
+}
+
+#logo {
+  opacity: 0;
+  height: 30vh;
+  width: 40vw;
+  animation: showAll 2s 0.2s forwards;
 }
 
 #heading {
@@ -48,12 +67,24 @@ html, body {
 }
 
 .animated-button {
-  opacity: 1;
+  opacity: 0;
   color: white;
   font-weight: bold;
   background-color: rgb(50,205,50);
   box-shadow: 0 5px 36px rgba(65,205,82,.7);
   transition: 1s All;
+  animation: showButton 0.8s 1s forwards;
+}
+
+@keyframes showButton {
+  0% {
+    transform: translateY(20%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 
@@ -289,9 +320,12 @@ button {
 
 #articlesSearch {
   margin-top: 75px;
-  background: #ece9e6;
-  background: -webkit-linear-gradient(to left, #ece9e6, #ffffff);
-  background: linear-gradient(to left, #ece9e6, #ffffff);
+  box-shadow: 0 5px 36px rgba(0, 0, 0, 0.7);
+  background: white;
+}
+
+#articlesBody {
+  background: linear-gradient(90deg,#6473f5,#4855e7)!important;
 }
 
 #headingRight {
@@ -301,11 +335,6 @@ button {
 }
 
 #about {
-  height: 30vh;
-  margin-bottom: 0;
-}
-
-#team {
-  height: 50%;
-  margin-top: 0;
+  background: linear-gradient(90deg,#6473f5,#4855e7)!important;
+  color: white;
 }
