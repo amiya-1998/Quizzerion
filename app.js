@@ -32,7 +32,8 @@ app.get('/articles', (req, res) => {
 });
 
 app.get('/articles/:id', (req, res) => {
-
+    var newDateForm = moment(data[req.params.id].updated_at, ["DD-MM-YYYY", "MM-DD-YYYY"]).format('LL');
+    data[req.params.id].updated_at = newDateForm;
     res.render('show', {article: data[req.params.id]});
 });
 
@@ -60,5 +61,4 @@ var ip = process.env.IP || 'localhost';
 
 app.listen(port, ip, () => {
   console.log(`Server started at port ${port}`);
-  console.log(moment(data[2].updated_at, ["DD-MM-YYYY", "MM-DD-YYYY"]).format());
 });
