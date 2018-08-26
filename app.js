@@ -41,8 +41,10 @@ app.get('/contact', (req, res) => {
   res.render('contact');
 });
 
-app.get('/quiz', (req, res) => {
-  res.render('quiz', {questions: questions});
+//
+
+app.get('/initquiz', (req, res) => {
+  res.render('initquiz');
 })
 
 // Change it to show no such website exists
