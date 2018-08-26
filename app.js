@@ -41,11 +41,14 @@ app.get('/contact', (req, res) => {
   res.render('contact');
 });
 
-//
-
+// WAITING / INSTRUCTION PAGE FOR QUIZ
 app.get('/initquiz', (req, res) => {
   res.render('initquiz');
-})
+});
+
+app.get('/quiz',(req,res) => {
+  res.render('quiz',{questions: questions});
+});
 
 // Change it to show no such website exists
 app.get('*', (req, res) => {
