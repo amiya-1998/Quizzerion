@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="/stylesheets/main.css">
 </head>
 
-<body>
+<body id="articlesBody">
   <nav class="navbar navbar-expand-md navbar-light fixed-top bg-white">
     <a class="navbar-brand" href="/"><img src="/stylesheets/img/Artboard 7.png" class="logoImage"></a>
     <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,33 +38,27 @@
     </div>
   </nav>
 
-  <!-- <header id="page-header">
+  <!-- Search Bar -->
+  <section id="articlesSearch" class="py-3">
     <div class="container">
       <div class="row">
-        <div class="col-md-6 m-auto text-center">
-          <h1>Latest Articles</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum tempora, officia consequuntur soluta voluptatum, at labore praesentium illo animi. Minus.</p>
+        <div class="col mx-auto">
+          <div class="card p-4">
+            <div class="card-body">
+              <h3 class="text-center">Search For Quizzes by Title or by Location</h3>
+              <hr>
+              <form action="https://formspree.io/bishal5058prime@gmail.com" method="POST" class="ui form">
+                <div class="ui fluid action input">
+                  <input type="text" name="query" placeholder="Search...">
+                  <button class="ui button">Search</button>
+                </div>
+              </form>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </header> -->
-
-
-  <!-- Search Bar -->
-
-  <div class="container jumbotron" id="articlesSearch">
-    <div class="row" id="headingRight">
-      <div>
-        <h1>Search Quizzes by Title or Location</h1>
-      </div>
-      <form action="/articles" class="form-inline mt-2 mt-md-0 ml-3 mr-3" method="get">
-        <div class="ui transparent input" id="search">
-          <input type="text" name="query" placeholder="Search..." autocomplete="off" id="searchTerm">
-        </div>
-        <button type="submit" class="btn" id="searchButton"><i class="search link icon"></i></button>
-      </form>
-    </div>
-  </div>
+  </section>
 
   <!-- Articles Section -->
 
