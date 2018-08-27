@@ -16,8 +16,8 @@
 <body>
 
 <!-- Navbar -->
-
-  <nav class="navbar navbar-expand-md navbar-light fixed-top bg-white">
+  <!-- COMMENTED OUT NAVBAR FOR TESTING PURPOSES -->
+  <!-- <nav class="navbar navbar-expand-md navbar-light fixed-top bg-white">
     <a class="navbar-brand" href="/"><img src="/stylesheets/img/Artboard 7.png" class="logoImage"></a>
     <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -41,11 +41,18 @@
         <button type="submit" class="btn"><i class="search link icon"></i></button>
       </form>
     </div>
-  </nav>
+  </nav> -->
+  <!-- WILL ADD THE NAVBAr LATER -->
 
 <!-- QUIZ INSTRUCTION BODY -->
 
-  <%  %>
+  <% for(let i = 0; i < questions.length; i++){ %>
+    <%= questions[i].question %>
+    <%= questions[i].a %>
+    <%= questions[i].b %>
+    <%= questions[i].c %>
+    <%= questions[i].d %>
+  <% } %>
 
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
