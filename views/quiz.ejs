@@ -46,13 +46,25 @@
 
 <!-- QUIZ INSTRUCTION BODY -->
 
-  <% for(let i = 0; i < questions.length; i++){ %>
-    <%= questions[i].question %>
-    <%= questions[i].a %>
-    <%= questions[i].b %>
-    <%= questions[i].c %>
-    <%= questions[i].d %>
-  <% } %>
+  <form action="/quiz" method="POST">
+    <% var ans = [] %>
+      <p><%= questions[0].question %></p>
+      <fieldset id="question1">
+        <div>
+          <input type="radio" id="op1" name="<%= questions[0].question %>" value="a">
+          <label for="op1"><%= questions[0].a %></label>
+          <input type="radio" id="op2" name="<%= questions[0].question %>" value="b">
+          <label for="op2"><%= questions[0].b %></label>
+          <input type="radio" id="op3" name="<%= questions[0].question %>" value="c">
+          <label for="op3"><%= questions[0].c %></label>
+          <input type="radio" id="op4" name="<%= questions[0].question %>" value="d">
+          <label for="op4"><%= questions[0].d %></label>
+        </div>
+      </fieldset>
+      <div>
+        <button type="submit">Submit</button>
+      </div>
+  </form>
 
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>

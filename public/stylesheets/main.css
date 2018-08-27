@@ -345,6 +345,7 @@ button {
   background: linear-gradient(90deg,#6473f5,#4855e7)!important;
   padding: 0;
   margin: 0;
+  height: 100vh;
 }
 
 /* Slider Card */

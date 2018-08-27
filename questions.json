@@ -1,6 +1,14 @@
 {
   "questions": [
     {
+      "question": "Who of the following people never became Ghost Rider?",
+      "a": "Johnny Blaze",
+      "b": "Laura Kinny",
+      "c": "Robbie Reyes",
+      "d": "Quake",
+      "correct": "d"
+    },
+    {
       "question": "What is the first alphabet ?",
       "a": "A",
       "b": "B",

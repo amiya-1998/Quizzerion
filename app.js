@@ -50,6 +50,11 @@ app.get('/quiz',(req,res) => {
   res.render('quiz',{questions: questions});
 });
 
+app.post('/quiz',(req,res) => {
+  console.log(req.body);
+  res.redirect('/quiz');
+});
+
 // Change it to show no such website exists
 app.get('*', (req, res) => {
   res.send("No such site exists");
