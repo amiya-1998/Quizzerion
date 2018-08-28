@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway:700|Work+Sans:600');
+@import url('https://fonts.googleapis.com/css?family=Raleway:400|Work+Sans:600');
 
 
 html, body {
@@ -88,7 +88,7 @@ canvas {
 
 .buttonAnimation {
   opacity: 0;
-  animation: showButton 0.8s 1s forwards;
+  animation: showButton 0.8s 0.7s forwards;
 }
 
 @keyframes showButton {
@@ -336,17 +336,13 @@ button {
   background: linear-gradient(90deg,#6473f5,#4855e7)!important;
 }
 
-#about {
-  background: linear-gradient(90deg,#6473f5,#4855e7)!important;
-  color: white;
-}
-
 #contactBody {
   background: linear-gradient(90deg,#6473f5,#4855e7)!important;
   padding: 0;
   margin: 0;
   height: 100vh;
 }
+<<<<<<< HEAD
 
 /* Slider Card */
 #team {
@@ -486,3 +482,5 @@ img{
   width: 500px;
   height: 500px;
 }
+=======
+>>>>>>> 93ab03be4aea29ab96a48c38271c1059f5782771
