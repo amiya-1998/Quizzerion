@@ -46,13 +46,12 @@ app.get('/initquiz', (req, res) => {
   res.render('initquiz');
 });
 
-app.get('/quiz',(req,res) => {
+app.get('/quiz', (req,res) => {
   res.render('quiz',{questions: questions});
 });
 
-app.post('/quiz',(req,res) => {
-  console.log(req.body);
-  res.redirect('/quiz');
+app.post('/quiz', (req,res) => {
+  res.redirect('/results', {results: req.body.ans, questions: questions});
 });
 
 // Change it to show no such website exists

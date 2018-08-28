@@ -474,3 +474,15 @@ section .section-title {
 .social-icon:hover {
   color: #4855e7;
 }
+
+/* for quiz section  */
+
+.hidden{
+  display: none;
+}
+
+img{
+  display: block;
+  width: 500px;
+  height: 500px;
+}

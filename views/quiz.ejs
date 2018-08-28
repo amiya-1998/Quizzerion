@@ -44,27 +44,40 @@
   </nav> -->
   <!-- WILL ADD THE NAVBAr LATER -->
 
-<!-- QUIZ INSTRUCTION BODY -->
+  <!-- QUIZ BODY -->
 
-  <form action="/quiz" method="POST">
-    <% var ans = [] %>
-      <p><%= questions[0].question %></p>
-      <fieldset id="question1">
-        <div>
-          <input type="radio" id="op1" name="<%= questions[0].question %>" value="a">
-          <label for="op1"><%= questions[0].a %></label>
-          <input type="radio" id="op2" name="<%= questions[0].question %>" value="b">
-          <label for="op2"><%= questions[0].b %></label>
-          <input type="radio" id="op3" name="<%= questions[0].question %>" value="c">
-          <label for="op3"><%= questions[0].c %></label>
-          <input type="radio" id="op4" name="<%= questions[0].question %>" value="d">
-          <label for="op4"><%= questions[0].d %></label>
-        </div>
-      </fieldset>
-      <div>
-        <button type="submit">Submit</button>
-      </div>
-  </form>
+<section class="intro">         <!--introPage forms -->
+<h1>How well do you know 90's movies?</h1>
+<button id="begin">Let's begin!</button>
+</section>
+
+<section class="questionForms hidden"> <!--question forms -->
+<div class="progress">
+  <div class="bar">Progress</div>
+</div>
+<h4 id="question"></h4>
+<form>
+  <label class="a"><input type="radio" name="myAnswer" value="a"><span class="a1"></span></label><br>
+  <label class="b"><input type="radio" name="myAnswer" value="b"><span class="b2"></span></label><br>
+  <label class="c"><input type="radio" name="myAnswer" value="c"><span class="c3"></span></label><br>
+  <label class="d"><input type="radio" name="myAnswer" value="d"><span class="d4"></span></label><br>
+  <button id="submit">Submit</button>
+</form>
+</section>
+
+<section class="results hidden">    <!--results page -->
+<h3 id="result"></h3>
+<img id="picTrivia">
+<p id="textTrivia"></p>
+<button class="next">Next Question</button>
+<button class="goToScore hidden">Show my Score</button>
+</section>
+
+<section class="end hidden">      <!--summary page forms -->
+ <h1 id="score"></h1>
+ <img id="scorepic">
+ <button id="restart">Restart Quiz</button>
+</section>
 
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
