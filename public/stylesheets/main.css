@@ -245,6 +245,10 @@ nav a.a:hover {
     border-bottom: 2px solid white;
   }
 
+  #logo {
+    width: 80vw;
+    height: 20vh;
+  }
 }
 
 /* ------------------------------------ */
@@ -267,7 +271,9 @@ footer#main-footer {
 #page-header {
   margin-top: 45px;
   height: 200px;
-  background: linear-gradient(90deg,#6473f5,#4855e7)!important;
+  background: #8e0e00;
+  background: -webkit-linear-gradient(to bottom, #8e0e00, #1f1c18);
+  background: linear-gradient(to bottom, #8e0e00, #1f1c18);
   color: white;
   padding-top: 50px;
 }
@@ -339,10 +345,15 @@ button {
 }
 
 #contactBody {
-  background: linear-gradient(90deg,#6473f5,#4855e7)!important;
+  background: #8e0e00;
+  background: -webkit-linear-gradient(to top, #8e0e00, #1f1c18);
+  background: linear-gradient(to top, #8e0e00, #1f1c18);
   padding: 0;
   margin: 0;
-  height: 100vh;
+}
+
+#contactBody > #page-header {
+  background: transparent !important;
 }
 
 /* Slider Card */

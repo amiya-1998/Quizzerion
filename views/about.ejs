@@ -29,9 +29,6 @@
         <li class="nav-item active mr-2">
           <a class="nav-link a" href="/about">About us</a>
         </li>
-        <li class="nav-item mr-2">
-          <a class="nav-link" href="/contact">Contact us</a>
-        </li>
       </ul>
       <form action="/articles" class="form-inline mt-2 mt-md-0 ml-sm-1 ml-md-3 mr-3" method="get">
         <div class="ui transparent input" id="search">
@@ -46,7 +43,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6 m-auto text-center">
-          <h1 class="mt-5">About Us</h1>
+          <h1 class="mt-5 text-uppercase">About Us</h1>
         </div>
       </div>
     </div>
@@ -55,17 +52,79 @@
   <section id="aboutUs">
     <div class="container">
       <div class="row">
-        <div class="col-md-6 p-3">
+        <div class="col-md-6 p-1">
           <p class="lead" style="font-family: 'Raleway', sans-serif;">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut aperiam repellendus nesciunt, quos tempora, maxime. Deleniti obcaecati excepturi dolorem quam omnis, mollitia quibusdam alias architecto, doloribus, ducimus qui inventore, aliquid. Hic quas dolor natus pariatur debitis, nihil ut architecto sequi eaque rem iste animi deleniti dolorum, cumque neque esse vel molestiae iure ipsam libero quibusdam similique quisquam odio doloremque! Sapiente, numquam. Esse, amet perferendis deleniti. Assumenda, at hic. Commodi veniam a dicta nostrum eligendi voluptatibus quasi temporibus vel voluptatem unde ipsam voluptas in maxime, necessitatibus accusantium officia laudantium sint non modi. Nihil tempora vero, officiis odit possimus quia modi, eveniet.
           </p>
         </div>
-        <div class="col-md-6 p-3">
+        <div class="col-md-6 p-1">
           <img src="/stylesheets/img/lights.jpg" class="img-fluid rounded-circle">
         </div>
       </div>
     </div>
   </section>
+
+  <div id="contactBody">
+    <header id="page-header">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 m-auto text-center">
+            <h1 class="mt-4">Want To Say Us Something ?</h1>
+            <p>You can fill out the form to Contact us. Alternatively you can use our social media handles to reach us.</p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-3">
+      <div class="container">
+        <div class="row mx-xs-auto">
+          <div class="col-md-8 mb-3">
+            <div class="card p-4 h-100">
+              <div class="card-body">
+                <h2 class="text-center">Fill Out This Form To Contact Us</h2>
+                <hr>
+                <form action="https://formspree.io/bishal5058prime@gmail.com" method="POST" class="ui form">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <input type="text" name="name" placeholder="Your Name: Eg John Doe" required>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <input type="email" name="email" placeholder="Your Email address" required>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <textarea type="email" name="message" rows="6" placeholder="Your message" required></textarea>
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <input type="submit" class="btn btn-outline-danger btn-block">
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card p-4 h-100">
+              <div class="card-body">
+                <h2>Social Media Handles</h2>
+                <hr>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
 
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>

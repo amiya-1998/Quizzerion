@@ -40,10 +40,6 @@ app.get('/articles/:id', (req, res) => {
   res.render('show', {article: data[req.params.id]});
 });
 
-app.get('/contact', (req, res) => {
-  res.render('contact');
-});
-
 app.get('/about', (req, res) => {
   res.render('about');
 })
