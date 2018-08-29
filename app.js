@@ -19,6 +19,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/articles', (req, res) => {
+  data.sort((a,b) => new Date(b.updated_at).getTime() - new Date(a.updated_at).getTime());
   if(req.query.query == null) {
     res.render('articles', {articles: data});
   } else {
@@ -27,14 +28,16 @@ app.get('/articles', (req, res) => {
     };
     var fuzzy = new fuse(data, options);
     var foundArticles = fuzzy.search(req.query.query);
+    foundArticles.sort((a,b) => new Date(b.updated_at).getTime() - new Date(a.updated_at).getTime());
     res.render('articles', {articles: foundArticles});
   }
 });
 
 app.get('/articles/:id', (req, res) => {
-    var newDateForm = moment(data[req.params.id].updated_at, ["DD-MM-YYYY", "MM-DD-YYYY"]).format('LL');
-    data[req.params.id].updated_at = newDateForm;
-    res.render('show', {article: data[req.params.id]});
+  data.sort((a,b) => a.id - b.id);
+  var newDateForm = moment(data[req.params.id].updated_at, ["DD-MM-YYYY", "MM-DD-YYYY"]).format('LL');
+  data[req.params.id].updated_at = newDateForm;
+  res.render('show', {article: data[req.params.id]});
 });
 
 app.get('/contact', (req, res) => {

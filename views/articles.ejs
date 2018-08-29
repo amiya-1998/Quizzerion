@@ -23,7 +23,7 @@
           <a class="nav-link" href="/">Home</a>
         </li>
         <li class="nav-item active mr-2">
-          <a class="nav-link a" href="/articles">Articles</a>
+          <a class="nav-link a" href="/articles">Quizzes</a>
         </li>
         <li class="nav-item mr-2">
           <a class="nav-link" href="/about">About us</a>
@@ -50,10 +50,10 @@
             <div class="card-body">
               <h3 class="text-center">Search For Quizzes by Title or by Location</h3>
               <hr>
-              <form action="https://formspree.io/bishal5058prime@gmail.com" method="POST" class="ui form">
+              <form action="/articles" method="GET" class="ui form">
                 <div class="ui fluid action input">
                   <input type="text" name="query" placeholder="Search...">
-                  <button class="ui button">Search</button>
+                  <button class="ui primary button">Search</button>
                 </div>
               </form>
             </div>
@@ -101,7 +101,7 @@
                         </p>
                       </li>
                     </ul>
-                    <a href="/articles/<%= i %>" class="btn btn-outline-primary">Read More</a>
+                    <a href="/articles/<%= articles[i].id %>" class="btn btn-outline-primary">Read More</a>
                     <a href="<%= articles[i].link %>" class="btn btn-outline-success">Contest Link</a>
                   </div>
                 </div>

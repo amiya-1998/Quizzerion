@@ -333,7 +333,9 @@ button {
 }
 
 #articlesBody {
-  background: linear-gradient(90deg,#6473f5,#4855e7)!important;
+  background: #780206;
+  background: -webkit-linear-gradient(to right, #780206, #061161);
+  background: linear-gradient(to right, #780206, #061161);
 }
 
 #contactBody {
@@ -342,7 +344,6 @@ button {
   margin: 0;
   height: 100vh;
 }
-<<<<<<< HEAD
 
 /* Slider Card */
 #team {
@@ -482,5 +483,3 @@ img{
   width: 500px;
   height: 500px;
 }
-=======
->>>>>>> 93ab03be4aea29ab96a48c38271c1059f5782771
