@@ -4,9 +4,7 @@ var bodyParser = require('body-parser');
 var data = require('./data.json');
 var fuse = require('fuse.js');
 var moment = require('moment');
-var questions = require('./questions.json');
 data = data.data;
-questions = questions.questions;
 
 data.sort((a,b) => new Date(b.updated_at).getTime() - new Date(a.updated_at).getTime());
 
@@ -36,8 +34,7 @@ app.get('/articles', (req, res) => {
 app.get('/articles/:id', (req, res) => {
   data.sort((a,b) => a.id - b.id);
   var newDateForm = moment(data[req.params.id].updated_at, ["DD-MM-YYYY", "MM-DD-YYYY"]).format('LL');
-  data[req.params.id].updated_at = newDateForm;
-  res.render('show', {article: data[req.params.id]});
+  res.render('show', {article: data[req.params.id], date: newDateForm});
 });
 
 app.get('/about', (req, res) => {
