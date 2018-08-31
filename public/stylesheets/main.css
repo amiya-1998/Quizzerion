@@ -1,12 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:400|Work+Sans:600');
 
-
 html, body {
   opacity: 0;
   animation: showAll forwards 0.3s 0.2s linear;
   overflow-x: hidden;
 }
-
 
 canvas {
   display: block;

@@ -47,17 +47,17 @@ app.get('/initquiz', (req, res) => {
 });
 
 app.get('/quiz', (req,res) => {
-  res.render('quiz',{questions: questions});
+  res.render('quiz');
 });
 
 app.post('/quiz', (req,res) => {
-  res.redirect('/results', {results: req.body.ans, questions: questions});
+  res.redirect('/results');
 });
 
 // Change it to show no such website exists
 app.get('*', (req, res) => {
-  res.send("No such site exists");
-})
+  res.render('error');
+});
 
 // POST ROUTE TO IMPLEMENT NODEMAILER
 app.post('/mail', (req, res) => {
