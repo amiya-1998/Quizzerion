@@ -28,11 +28,8 @@
         <li class="nav-item mr-2">
           <a class="nav-link" href="/about">About us</a>
         </li>
-        <li class="nav-item mr-2">
-          <a class="nav-link" href="/contact">Contact us</a>
-        </li>
       </ul>
-      <form action="/articles" class="form-inline mt-2 mt-md-0 ml-sm-1 ml-md-3 mr-3" method="get">
+      <form action="/articles" class="form mt-2 mt-md-0 ml-sm-1 ml-md-3 mr-3" method="get">
         <div class="ui transparent input" id="search">
           <input type="text" name="query" placeholder="Search" autocomplete="off">
         </div>
@@ -48,7 +45,7 @@
         <div class="col mx-auto">
           <div class="card p-4">
             <div class="card-body">
-              <h3 class="text-center">Search For Quizzes by Title or by Location</h3>
+              <h3 class="text-center text-uppercase">Search For Quizzes by Title or by Location</h3>
               <hr>
               <form action="/articles" method="GET" class="ui form">
                 <div class="ui fluid action input">
@@ -82,13 +79,6 @@
 
                   <div class="card-body">
                     <h3 class="card-title"><%= articles[i].title %></h3>
-                    <p class="card-text">
-                      <% if(articles[i].description.length <= 20) { %>
-                        <%- articles[i].description %>
-                      <% } else { %>
-                        <%- articles[i].description.substring(0, 20) %>...
-                      <% }%>
-                    </p>
                     <ul class="list-group list-group-flush mb-3">
                       <li class="list-group-item">
                         <p class="mb-0">Contest Date:
@@ -102,7 +92,7 @@
                       </li>
                     </ul>
                     <a href="/articles/<%= articles[i].id %>" class="btn btn-outline-primary">Read More</a>
-                    <a href="<%= articles[i].link %>" class="btn btn-outline-success">Contest Link</a>
+                    <a href="<%= articles[i].link %>" class="btn btn-outline-success ml-auto">Contest Link</a>
                   </div>
                 </div>
               </div>

@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="/stylesheets/main.css">
   <link rel="stylesheet" href="/stylesheets/master.css">
 </head>
-<body>
+<body id="showBody">
 
   <nav class="navbar navbar-expand-md navbar-light fixed-top bg-white">
     <a class="navbar-brand" href="/"><img src="/stylesheets/img/Artboard 7.png" class="logoImage"></a>
@@ -28,9 +28,6 @@
         <li class="nav-item mr-2">
           <a class="nav-link" href="/about">About us</a>
         </li>
-        <li class="nav-item mr-2">
-          <a class="nav-link" href="/contact">Contact us</a>
-        </li>
       </ul>
       <form action="/articles" class="form-inline mt-2 mt-md-0 ml-sm-1 ml-md-3 mr-3" method="get">
         <div class="ui transparent input" id="search">
@@ -41,11 +38,9 @@
     </div>
   </nav>
 
-  <% var date = new Date(article.updated_at).toDateString(); %>
-
   <div class="container">
       <div class="card" id="cardContainer">
-        <div class="card-header" id="cardHeading"><%= article.title %></div>
+        <div class="card-header text-center" id="cardHeading"><h1 class="display-4"><%= article.title %></h1></div>
         <div class="container">
           <div class="row">
             <div class="col-md-6">
@@ -55,7 +50,7 @@
                 </div>
               </figure>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-4 my-auto">
               <div class="card mx-auto w-100" id="details">
                 <ul class="list-group list-group-flush" id="detlist">
                   <div class="row">
@@ -63,7 +58,7 @@
                       <li class="list-group-item">Date: </li>
                     </div>
                     <div class="col-6 marginExtendLeft">
-                      <li class="list-group-item text-right"><%= article.updated_at %></li>
+                      <li class="list-group-item text-right"><%= date %></li>
                     </div>
                   </div>
                   <div class="row">
@@ -72,14 +67,6 @@
                     </div>
                     <div class="col-6 marginExtendLeft">
                       <li class="list-group-item text-right"><%= article.location %></li>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-6 marginExtendRight">
-                      <li class="list-group-item">Organiser: </li>
-                    </div>
-                    <div class="col-6 marginExtendLeft">
-                      <li class="list-group-item text-right">Organiser</li>
                     </div>
                   </div>
                 </ul>
@@ -91,7 +78,7 @@
           </div>
         </div>
         <div class="card-body" id="desc">
-          <p class="card-text"><%= article.description %>
+          <p class="card-text lead text-justify" id="showDescription"><%- article.description %></p>
           </p>
         </div>
       </div>
