@@ -220,7 +220,7 @@ $(document).ready(() => {
   let i = -1;
   myQuiz.category.forEach((cate)=>{
     i++;
-    $('#cat').prepend('<label class="a"><input type="radio" name="quizCategory" value="' + i + '"><span class="catname">' + cate + '</span></label><br>')
+    $('#cat .Cats').append('<label class="a"><input type="radio" name="quizCategory" value="' + i + '"><span class="catname">' + cate + '</span></label><br>')
   })
 });
 

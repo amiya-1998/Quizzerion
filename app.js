@@ -47,7 +47,7 @@ app.get('/initquiz', (req, res) => {
 });
 
 app.get('/quiz', (req,res) => {
-  res.render('quiz',{questions: questions});
+  res.render('quiz');
 });
 
 app.post('/quiz', (req,res) => {
