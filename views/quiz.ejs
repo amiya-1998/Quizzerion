@@ -15,7 +15,7 @@
 
 <!-- Navbar -->
   <!-- COMMENTED OUT NAVBAR FOR TESTING PURPOSES -->
-  <!-- <nav class="navbar navbar-expand-md navbar-light fixed-top bg-white">
+  <nav class="navbar navbar-expand-md navbar-light fixed-top bg-white">
     <a class="navbar-brand" href="/"><img src="/stylesheets/img/Artboard 7.png" class="logoImage"></a>
     <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -42,45 +42,72 @@
         <button type="submit" class="btn"><i class="search link icon"></i></button>
       </form>
     </div>
-  </nav> -->
+  </nav>
   <!-- WILL ADD THE NAVBAr LATER -->
 
   <!-- QUIZ BODY -->
 
-<section class="intro">         <!--introPage forms -->
-<h1>How well do you know 90's movies?</h1>
-<button id="begin">Let's begin!</button>
-</section>
+  <section class="intro container">
+    <!--introPage forms -->
+    <div class="card">
+      <div class="card-header text-center " id="chooseCat">
+        <h1>Choose Your Quiz Category</h1>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-4 mx-auto">
+            <div class="card-body" id="catCard">
+              <form id="cat">
+                <div class="Cats"></div>
+                <button type="submit" class="btn btn-primary" id="begin">Let's begin!</button>
+              </form>
+            </div>
+            <div class="card-footer text-muted quizWarn hidden">
+              2 days ago
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<section class="questionForms hidden"> <!--question forms -->
-<div class="progress">
-  <div class="bar">Progress</div>
-</div>
-<h4 id="question"></h4>
-<form>
-  <label class="a"><input type="radio" name="myAnswer" value="a"><span class="a1"></span></label><br>
-  <label class="b"><input type="radio" name="myAnswer" value="b"><span class="b2"></span></label><br>
-  <label class="c"><input type="radio" name="myAnswer" value="c"><span class="c3"></span></label><br>
-  <label class="d"><input type="radio" name="myAnswer" value="d"><span class="d4"></span></label><br>
-  <button id="submit">Submit</button>
-</form>
-</section>
 
-<!-- Results Page -->
-<section class="results hidden">
-<h3 id="result"></h3>
-<img id="picTrivia">
-<p id="textTrivia"></p>
-<button class="next">Next Question</button>
-<button class="goToScore hidden">Show my Score</button>
-</section>
+  <section class="questionForms hidden container"> <!--question forms -->
+    <div class="card">
+      <h5 class="card-header" id="question"></h5>
+      <div class="card-body">
+        <form>
+          <label class="a"><input type="radio" name="myAnswer" value="a" required><span class="a1"></span></label><br>
+          <label class="b"><input type="radio" name="myAnswer" value="b" required><span class="b2"></span></label><br>
+          <label class="c"><input type="radio" name="myAnswer" value="c" required><span class="c3"></span></label><br>
+          <label class="d"><input type="radio" name="myAnswer" value="d" required><span class="d4"></span></label><br>
+          <button class="btn btn-primary" id="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </section>
 
-<!-- Summary Page Form -->
-<section class="end hidden">
- <h1 id="score"></h1>
- <img id="scorepic">
- <button id="restart">Restart Quiz</button>
-</section>
+  <section class="results hidden container">    <!--results page -->
+    <div class="card">
+      <h3 class="card-header" id="result"></h3>
+      <div class="card-body">
+        <img id="picTrivia">
+        <p id="textTrivia"></p>
+        <button class="next btn btn-primary">Next Question</button>
+        <button class="goToScore btn btn-primary hidden">Show my Score</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="end hidden container">      <!--summary page forms -->
+    <div class="card">
+      <h5 class="card-header" id="score"></h5>
+      <div class="card-body">
+        <img id="scorepic">
+        <button id="restart" class="btn btn-primary">Restart Quiz</button>
+      </div>
+    </div>
+  </section>
 
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>

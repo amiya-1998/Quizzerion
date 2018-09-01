@@ -365,3 +365,10 @@ img{
   width: 500px;
   height: 500px;
 }
+
+.intro {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
