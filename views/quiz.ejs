@@ -43,27 +43,27 @@
       </form>
     </div>
   </nav>
-  <!-- WILL ADD THE NAVBAr LATER -->
 
   <!-- QUIZ BODY -->
 
-  <section class="intro container">
+  <section class="intro container h-100">
     <!--introPage forms -->
-    <div class="card">
-      <div class="card-header text-center " id="chooseCat">
-        <h1>Choose Your Quiz Category</h1>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-4 mx-auto">
-            <div class="card-body" id="catCard">
-              <form id="cat">
-                <div class="Cats"></div>
-                <button type="submit" class="btn btn-primary" id="begin">Let's begin!</button>
-              </form>
-            </div>
-            <div class="card-footer text-muted quizWarn hidden">
-              2 days ago
+    <div class="row h-100">
+      <div class="col-md-6 my-auto mx-auto">
+        <div class="card">
+          <div class="card-header text-center " id="chooseCat">
+            <h1>Choose Your Quiz Category</h1>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col mx-auto">
+                <div class="card-body" id="catCard">
+                  <form id="cat">
+                    <div class="Cats"></div>
+                    <button type="submit" class="btn btn-primary" id="begin">Let's begin!</button>
+                  </form>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -71,40 +71,52 @@
     </div>
   </section>
 
-
-  <section class="questionForms hidden container"> <!--question forms -->
-    <div class="card">
-      <h5 class="card-header" id="question"></h5>
-      <div class="card-body">
-        <form>
-          <label class="a"><input type="radio" name="myAnswer" value="a" required><span class="a1"></span></label><br>
-          <label class="b"><input type="radio" name="myAnswer" value="b" required><span class="b2"></span></label><br>
-          <label class="c"><input type="radio" name="myAnswer" value="c" required><span class="c3"></span></label><br>
-          <label class="d"><input type="radio" name="myAnswer" value="d" required><span class="d4"></span></label><br>
-          <button class="btn btn-primary" id="submit">Submit</button>
-        </form>
+  <!--question forms -->
+  <section class="questionForms hidden container h-100">
+    <div class="row h-100">
+      <div class="col-md-8 mx-auto my-auto">
+        <div class="card">
+          <h5 class="card-header" id="question"></h5>
+          <div class="card-body">
+            <form>
+              <label class="a"><input type="radio" name="myAnswer" value="a" required><span class="a1"></span></label><br>
+              <label class="b"><input type="radio" name="myAnswer" value="b" required><span class="b2"></span></label><br>
+              <label class="c"><input type="radio" name="myAnswer" value="c" required><span class="c3"></span></label><br>
+              <label class="d"><input type="radio" name="myAnswer" value="d" required><span class="d4"></span></label><br>
+              <button class="btn btn-primary" id="submit">Submit</button>
+            </form>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="results hidden container">    <!--results page -->
-    <div class="card">
-      <h3 class="card-header" id="result"></h3>
-      <div class="card-body">
-        <img id="picTrivia">
-        <p id="textTrivia"></p>
-        <button class="next btn btn-primary">Next Question</button>
-        <button class="goToScore btn btn-primary hidden">Show my Score</button>
+  <section class="results hidden container h-100">
+    <div class="row h-100">
+      <div class="col-md-8 mx-auto my-auto">
+        <div class="card">
+          <h3 class="card-header" id="result"></h3>
+          <div class="card-body">
+            <img id="picTrivia" class="img-fluid">
+            <p id="textTrivia"></p>
+            <button class="next btn btn-primary">Next Question</button>
+            <button class="goToScore btn btn-primary hidden">Show my Score</button>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="end hidden container">      <!--summary page forms -->
-    <div class="card">
-      <h5 class="card-header" id="score"></h5>
-      <div class="card-body">
-        <img id="scorepic">
-        <button id="restart" class="btn btn-primary">Restart Quiz</button>
+  <section class="end hidden container">
+    <div class="row h-100">
+      <div class="col-md-8 mx-auto my-auto">
+        <div class="card">
+          <h5 class="card-header" id="score"></h5>
+          <div class="card-body d-flex">
+            <img id="scorepic" class="img-fluid mx-auto">
+          </div>
+          <button id="restart" class="btn btn-primary my-3 mx-auto">Restart Quiz</button>
+        </div>
       </div>
     </div>
   </section>

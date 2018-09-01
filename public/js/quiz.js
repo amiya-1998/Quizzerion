@@ -1,7 +1,7 @@
 var myQuiz = {
   currentQuestion:0,
   correctTally: 0,
-  result: ['You’re correct!', 'You’re wrong!'],
+  result: ['You’re correct!', 'Oops!! You dont'],
     category: [
       "90's Movies",
       "Anime",
@@ -251,7 +251,7 @@ $('#submit').click(function(e){
       $('.questionForms').addClass('hidden');                // hides the question page
       $('.results').removeClass('hidden');                   // shows the results page
       $("h3#result").text(myQuiz.result[0]);                 // adds the text whether user is correct or not
-      $("img").attr('src', queries.images[myQuiz.currentQuestion]);   //adds the image associated with the current question
+      $("#picTrivia").attr('src', queries.images[myQuiz.currentQuestion]);   //adds the image associated with the current question
       $("p#textTrivia").text(queries.trivia[myQuiz.currentQuestion]); //adds the trivia text associated with the current question
       myQuiz.currentQuestion++;
       myQuiz.correctTally++;
@@ -259,7 +259,7 @@ $('#submit').click(function(e){
       $('.questionForms').addClass('hidden');                // hides the question page
       $('.results').removeClass('hidden');                    // shows the results page
       $("h3#result").text(myQuiz.result[1]);                   // adds the text whether user is correct or not
-      $("img").attr('src', queries.images[myQuiz.currentQuestion]);     //adds the image associated with the current question
+      $("#picTrivia").attr('src', queries.images[myQuiz.currentQuestion]);     //adds the image associated with the current question
       $("p#textTrivia").text(queries.trivia[myQuiz.currentQuestion]);    //adds the trivia text associated with the current question
       myQuiz.currentQuestion++;
     }
@@ -270,7 +270,7 @@ $('#submit').click(function(e){
       $('.questionForms').addClass('hidden');                // hides the question page
       $('.results').removeClass('hidden');                   // shows the results page
       $("h3#result").text(myQuiz.result[0]);                 // adds the text whether user is correct or not
-      $("img").attr('src', queries.images[myQuiz.currentQuestion]);   //adds the image associated with the current question
+      $("#picTrivia").attr('src', queries.images[myQuiz.currentQuestion]);   //adds the image associated with the current question
       $("p#textTrivia").text(queries.trivia[myQuiz.currentQuestion]); //adds the trivia text associated with the current question
       $('.next').addClass('hidden');                         // hides the Next Question button
       $('.goToScore').removeClass('hidden');
@@ -281,7 +281,7 @@ $('#submit').click(function(e){
       $('.questionForms').addClass('hidden');                // hides the question page
       $('.results').removeClass('hidden');                    // shows the results page
       $("h3#result").text(myQuiz.result[1]);                   // adds the text whether user is correct or not
-      $("img").attr('src', queries.images[myQuiz.currentQuestion]);     //adds the image associated with the current question
+      $("#picTrivia").attr('src', queries.images[myQuiz.currentQuestion]);     //adds the image associated with the current question
       $("p#textTrivia").text(queries.trivia[myQuiz.currentQuestion]);
       $('.next').addClass('hidden');                         // hides the Next Question button
       $('.goToScore').removeClass('hidden');                 // shows the Next Question button
@@ -329,5 +329,3 @@ $('.end').on('click', '#restart', function (e) {
   console.log(myQuiz.correctTally);
   console.log(myQuiz.currentQuestion);
 });
-
-// VALIDATION ON THE FORM
