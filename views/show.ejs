@@ -15,7 +15,7 @@
   <nav class="navbar navbar-expand-md navbar-light fixed-top bg-white">
     <a class="navbar-brand" href="/"><img src="/stylesheets/img/Artboard 7.png" class="logoImage"></a>
     <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+      <span class="navbar-toggler-icon"></span>
     </button>
     <div class="navbar-collapse collapse" id="navbarCollapse" style="">
       <ul class="navbar-nav ml-auto">
@@ -39,50 +39,57 @@
   </nav>
 
   <div class="container">
-      <div class="card" id="cardContainer">
-        <div class="card-header text-center" id="cardHeading"><h1 class="display-4"><%= article.title %></h1></div>
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6">
-              <figure class="figure position-static centerObject">
-                <div class="modular">
-                  <img class="img-thumbnail img-fluid image" src="<%= article.image %>" alt="ALL MIGHT PLUS ULTRA">
-                </div>
-              </figure>
-            </div>
-            <div class="col-md-4 my-auto">
-              <div class="card mx-auto w-100" id="details">
-                <ul class="list-group list-group-flush" id="detlist">
-                  <div class="row">
-                    <div class="col-6 marginExtendRight">
-                      <li class="list-group-item">Date: </li>
-                    </div>
-                    <div class="col-6 marginExtendLeft">
-                      <li class="list-group-item text-right"><%= date %></li>
-                    </div>
+    <div class="card" id="cardContainer">
+      <div class="card-header text-center" id="cardHeading">
+        <h1 class="display-4"><%= article.title %></h1></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <figure class="figure position-static centerObject">
+              <div class="modular">
+                <img class="img-thumbnail img-fluid image" src="<%= article.image %>" alt="ALL MIGHT PLUS ULTRA">
+              </div>
+            </figure>
+          </div>
+          <div class="col-md-4 my-auto">
+            <div class="card mx-auto w-100" id="details">
+              <ul class="list-group list-group-flush" id="detlist">
+                <div class="row">
+                  <div class="col-6 marginExtendRight">
+                    <li class="list-group-item">Date: </li>
                   </div>
-                  <div class="row">
-                    <div class="col-6 marginExtendRight">
-                      <li class="list-group-item">Location: </li>
-                    </div>
-                    <div class="col-6 marginExtendLeft">
-                      <li class="list-group-item text-right"><%= article.location %></li>
-                    </div>
+                  <div class="col-6 marginExtendLeft">
+                    <li class="list-group-item text-right">
+                      <%= date %>
+                    </li>
                   </div>
-                </ul>
-                <div class="card-body centerObject" >
-                  <a href="<%= article.link %>" class="btn btn-outline-success" id="descbtn">Visit Official Site</a>
                 </div>
+                <div class="row">
+                  <div class="col-6 marginExtendRight">
+                    <li class="list-group-item">Location: </li>
+                  </div>
+                  <div class="col-6 marginExtendLeft">
+                    <li class="list-group-item text-right">
+                      <%= article.location %>
+                    </li>
+                  </div>
+                </div>
+              </ul>
+              <div class="card-body centerObject">
+                <a href="<%= article.link %>" class="btn btn-outline-success" id="descbtn">Visit Official Site</a>
               </div>
             </div>
           </div>
         </div>
-        <div class="card-body" id="desc">
-          <p class="card-text lead text-justify" id="showDescription"><%- article.description %></p>
-          </p>
-        </div>
+      </div>
+      <div class="card-body" id="desc">
+        <p class="card-text lead text-justify" id="showDescription">
+          <%- article.description %>
+        </p>
+        </p>
       </div>
     </div>
+  </div>
 
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
