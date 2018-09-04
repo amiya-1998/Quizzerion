@@ -127,9 +127,6 @@ canvas {
 }
 
 @media (max-width: 425px) {
-  #header {
-    height: 100vh;
-  }
   #heading {
     opacity: 0;
     letter-spacing: 10px;
