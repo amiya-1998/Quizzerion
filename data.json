@@ -15,7 +15,7 @@
       "title": "DDM IT QUIZ",
       "image": "http://www.ddmitquiz.com/wp-content/uploads/2018/03/ddmit-logo.png",
   	  "description":"Technology is a curiosity creator. Its depth has no limit and can be explored unendingly. The Debasish Das Memorial IT Quiz (DDM IT Quiz) organised by Mindfire Solutions is a platform for the  inquisitive technical and management students to showcase their knowledge and quench the thirst for information. The DDMIT saga started in the year 2011 with about 100 teams participating and last year it witnessed more than 350 teams from across the country. The overwhelming response led to the IIT Kharagpur edition of the Quiz in 2017.  It is now recognised as one of the largest IT Quizzes at the college level in the nation.",
-      "link": "- http://www.ddmitquiz.com/",
+      "link": "http://www.ddmitquiz.com/",
       "location": "Bhubaneswar",
       "updated_at": "TBD"
     },
@@ -42,7 +42,7 @@
       "title": "Landmark Quiz",
       "image": "http://landmarkquiz.in/img/Quiz_banner.jpg",
   	  "description":"Landmark Quiz is an annual quiz contest instituted in 1992 by the Landmark Bookstores owned by Tata Group through its Trent (Westside) brand. Since 2008, the event has been held in Bangalore, Chennai, Delhi, Hyderabad, Mumbai, and Pune on various dates. The quiz is mostly conducted on Landmark Quiz starts with a huge turnout for the quiz preliminary round where participants fill in their answers for about 40 questions that come up on a screen. No negative marking is applied. The quiz is normally set by a team of senior quiz-masters such as Dr. Navin Jayakumar, Gautam Padmanabhan, and Navin's mother, Saranya Jayakumar. It has been hosted by Dr. Navin Jayakumar since its inception with the exception of 2006 when Derek O'Brien was the quizmaster in the absence of the main quizmasters. The quiz is mostly conducted on national holidays, and is one of the oldest open quizzes in India.",
-      "link": "http://landmarkquiz.in/",
+      "link": "https://landmarkquiz.in/",
       "location": "Chennai",
       "updated_at": "TBD"
     },
@@ -67,7 +67,7 @@
 	{
       "id": 7,
       "title": "Times Ascent Engineering Mastermind Quiz",
-      "image": "https://pbs.twimg.com/profile_images/755007827282845696/u0-mEFgo_400x400.jpg",
+      "image": "https://pbs.twimg.com/profile_images/755007827282845696/u0-mEFgo.jpg",
   	  "description":"India celebrates 51st Engineer's Day on September 15th to mark the birth anniversary of Sir M Visvesvaraya, the most outstanding Indian Engineer. He was the brain behind Hyderabad's flood protection system and the construction of Krishna Raja Sagara dam in Mysore. His systems are in use till date. He was also honoured with India's highest honour Bharat Ratna in 1955. Times Ascent is commemorating Engineer's day with National level quiz - 'Times Ascent Engineering Mastermind' Times Ascent Engineering Mastermind Quiz, India’s biggest Inter-Corporate Quiz for engineers, in its 7th edition, will be held on 8th & 15th September 2018. It will be a grand opportunity to witness a battle of wits amongst the best engineering minds in the country. TAEM would have Zonal rounds in Mumbai, Bengaluru, Delhi, Chennai, Pune, Hyderabad & Ahmedabad which would culminate in the shortlisted teams competing for the coveted honour in Chennai.",
       "link": "http://www.timesascent.com/aem/index.html",
       "location": "Chennai",
