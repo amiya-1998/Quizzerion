@@ -65,9 +65,15 @@ app.post('/mail', (req, res) => {
   res.redirect("/contact");
 });
 
-var port = process.env.PORT || 3000;
-var ip = process.env.IP || 'localhost';
+// var port = process.env.PORT || 3000;
+// var ip = process.env.IP || 'localhost';
+//
+// app.listen(port, ip, () => {
+//   console.log(`Server started at port ${port}`);
+// });
 
-app.listen(port, ip, () => {
-  console.log(`Server started at port ${port}`);
+var server_port = process.env.YOUR_PORT || process.env.PORT || 3000;
+var server_host = process.env.YOUR_HOST || '0.0.0.0';
+app.listen(server_port, server_host, function() {
+    console.log('Listening on port %d', server_port);
 });
