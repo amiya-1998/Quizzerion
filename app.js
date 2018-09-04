@@ -39,7 +39,7 @@ app.get('/articles/:id', (req, res) => {
 
 app.get('/about', (req, res) => {
   res.render('about');
-})
+});
 
 // // WAITING / INSTRUCTION PAGE FOR QUIZ
 // app.get('/initquiz', (req, res) => {
