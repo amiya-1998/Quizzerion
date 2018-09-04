@@ -34,9 +34,6 @@ app.get('/articles', (req, res) => {
 app.get('/articles/:id', (req, res) => {
   data.sort((a,b) => a.id - b.id);
   var newDateForm = moment(data[req.params.id].updated_at, ["DD-MM-YYYY", "MM-DD-YYYY"]).format('LL');
-  if(req.params.id].updated_at === "TBD") {
-    newDateForm = "TBD";
-  }
   res.render('show', {article: data[req.params.id], date: newDateForm});
 });
 
