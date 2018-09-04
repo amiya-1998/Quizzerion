@@ -41,10 +41,10 @@ app.get('/about', (req, res) => {
   res.render('about');
 })
 
-// WAITING / INSTRUCTION PAGE FOR QUIZ
-app.get('/initquiz', (req, res) => {
-  res.render('initquiz');
-});
+// // WAITING / INSTRUCTION PAGE FOR QUIZ
+// app.get('/initquiz', (req, res) => {
+//   res.render('initquiz');
+// });
 
 app.get('/quiz', (req,res) => {
   res.render('quiz');
