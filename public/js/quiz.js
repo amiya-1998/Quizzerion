@@ -1,7 +1,7 @@
 var myQuiz = {
   currentQuestion:0,
   correctTally: 0,
-  result: ['You’re correct!', 'Oops!! You dont'],
+  result: ['You’re correct!', 'Sorry!! Wrong Answer'],
     category: [
       "90's Movies",
       "Anime",
@@ -327,7 +327,7 @@ $('.end').on('click', '#restart', function (e) {
   $('.goToScore').addClass('hidden');
   $('.next').removeClass('hidden');
   console.log(myQuiz.correctTally);
-  console.log(myQuiz.currentQuestion);  
+  console.log(myQuiz.currentQuestion);
   queries = {
     questionList: [],
     images: [],
