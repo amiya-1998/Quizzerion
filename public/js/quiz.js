@@ -327,5 +327,10 @@ $('.end').on('click', '#restart', function (e) {
   $('.goToScore').addClass('hidden');
   $('.next').removeClass('hidden');
   console.log(myQuiz.correctTally);
-  console.log(myQuiz.currentQuestion);
+  console.log(myQuiz.currentQuestion);  
+  queries = {
+    questionList: [],
+    images: [],
+    trivia: []
+  };
 });
