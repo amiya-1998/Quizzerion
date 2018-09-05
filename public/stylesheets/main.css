@@ -353,13 +353,3 @@ button {
 #contactBody > #page-header {
   background: transparent !important;
 }
-
-/* for quiz section  */
-
-.hidden{
-  display: none;
-}
-
-.questionForms ,.results, .end {
-  margin-top: 75px;
-}

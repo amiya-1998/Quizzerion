@@ -191,7 +191,6 @@ function generate_random(){
     }
     num.push(genNum);
   }
-  console.log(num);
   return num;
 }
 
@@ -233,7 +232,7 @@ $("#begin").click((e) => {
   // j = $('input[name="quizCategory"]:checked').val();
   j = calculateIndex();
   genRandom_Quiz(j);
-  setTimeout(() => {console.log("WAIT!!!!!!!!!")}, 2000);
+  setTimeout(() => {}, 2000);
   let firstPage = queries.questionList[0];       //targets the first questionList object and assigns to variable
   $('#question').text(firstPage.question);      //adds the first question to the h4
   $('.a1').text(firstPage.answers.a);           //adds the first choice of answer
@@ -326,8 +325,6 @@ $('.end').on('click', '#restart', function (e) {
   $('.intro').removeClass('hidden');
   $('.goToScore').addClass('hidden');
   $('.next').removeClass('hidden');
-  console.log(myQuiz.correctTally);
-  console.log(myQuiz.currentQuestion);
   queries = {
     questionList: [],
     images: [],

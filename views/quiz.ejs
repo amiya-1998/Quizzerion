@@ -6,17 +6,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Quizzotrope</title>
+  <link rel="shortcut icon" href="/stylesheets/img/Artboard 7.png">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.css" />
   <link rel="stylesheet" href="/stylesheets/main.css">
-    <link rel="shortcut icon" href="/stylesheets/img/Artboard 7.png">
+  <link rel="stylesheet" href="/stylesheets/quiz.css">
 </head>
 
 <body>
 
 <!-- Navbar -->
   <!-- COMMENTED OUT NAVBAR FOR TESTING PURPOSES -->
-  <nav class="navbar navbar-expand-md navbar-light fixed-top bg-white">
+  <nav class="navbar navbar-expand-md navbar-light bg-white">
     <a class="navbar-brand" href="/"><img src="/stylesheets/img/Artboard 7.png" class="logoImage"></a>
     <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -27,7 +28,7 @@
           <a class="nav-link a" href="/">Home</a>
         </li>
         <li class="nav-item mr-2">
-          <a class="nav-link" href="/articles">Articles</a>
+          <a class="nav-link" href="/articles">Quizzes</a>
         </li>
         <li class="nav-item mr-2">
           <a class="nav-link" href="/about">About us</a>
@@ -80,10 +81,10 @@
           <h5 class="card-header" id="question"></h5>
           <div class="card-body">
             <form>
-              <label class="a"><input type="radio" name="myAnswer" value="a" required><span class="a1"></span></label><br>
-              <label class="b"><input type="radio" name="myAnswer" value="b" required><span class="b2"></span></label><br>
-              <label class="c"><input type="radio" name="myAnswer" value="c" required><span class="c3"></span></label><br>
-              <label class="d"><input type="radio" name="myAnswer" value="d" required><span class="d4"></span></label><br>
+              <label class="a"><input type="radio" name="myAnswer" value="a" required><span class="a1 ml-2"></span></label><br>
+              <label class="b"><input type="radio" name="myAnswer" value="b" required><span class="b2 ml-2"></span></label><br>
+              <label class="c"><input type="radio" name="myAnswer" value="c" required><span class="c3 ml-2"></span></label><br>
+              <label class="d"><input type="radio" name="myAnswer" value="d" required><span class="d4 ml-2"></span></label><br>
               <button class="btn btn-primary" id="submit">Submit</button>
             </form>
           </div>
@@ -99,6 +100,7 @@
           <h3 class="card-header" id="result"></h3>
           <div class="card-body">
             <img id="picTrivia" class="img-fluid">
+            <hr>
             <p id="textTrivia"></p>
             <button class="next btn btn-primary">Next Question</button>
             <button class="goToScore btn btn-primary hidden">Show my Score</button>
