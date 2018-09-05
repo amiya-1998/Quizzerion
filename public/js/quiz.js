@@ -159,16 +159,16 @@ var workingQuiz = {
       "https://i.pinimg.com/originals/00/c2/ba/00c2ba2530413bbe5e52d709c88bc4a0.gif"
       ],
     trivia: [
-      "Naruto's natural affinity is Wind Release, which he learned from Asuma Sarutobi to flow into his weapons to increase their offensive might.[107] Using shadow clones, he couple the complete difficult task of adding his elemental nature to the Rasengan, something no one, including his father, had been able to succeed at. ",
-      "Its rival ‘Shakespeare in Love’, a period romantic comedy with a literate, witty Tom Stoppard script and sumptuous production values won the award, which many Oscar-watchers still found outrageous.",
-      "Including revenue from the 2012 reissue, Titanic earned a worldwide total of $2,185,372,302. It became the highest-grossing film of all time worldwide in 1998, and remained so for twelve years, until Avatar (2009), also written and directed by Cameron, surpassed it in 2010.",
-      "The photo of her is from the film One Million B.C. and was apparently one of the most, if not the most, popular pin up of the 60s. Other posters he used were of Rita Hayworth and Monroe.",
-      "In the classic Western movie “Tombstone” (1993) Val Kilmer, as Doc Holliday, says to Johnny Ringo, “I'm your Huckleberry, that's just my game.”",
-      "In fiction, a MacGuffin is a plot device in the form of some goal, desired object, or other motivator that the protagonist pursues, often with little or no narrative explanation. ",
-      "That line is part of the answer Gibson gives after one nervous Scottish soldier suggests out loud that it might be better to retreat and live to fight another day.",
-      "The song was used in the parent film, Dick Tracy. “Sooner or Later” was composed to evoke the theatrical nature and style of the film.",
-      "Based on the The Saffir-Simpson Hurricane Wind Scale, category 5 has sustained winds of 157 mph or higher, which means a catastrophic damage will occur, including a high percentage of destructed framed homes.",
-      "One of the more memorable scenes in “Forrest Gump” happens when the title character's shrimping money is invested by his partner, Lt. Dan, in what Forrest describes as “some kind of fruit company”."
+      "Naruto's natural affinity is Wind Release, which he learned from Asuma Sarutobi to flow into his weapons to increase their offensive might. Using shadow clones, he couple the complete difficult task of adding his elemental nature to the Rasengan, something no one, including his father, had been able to succeed at. ",
+      "The size and form of the release markings may depend on how much chakra is being released from the seal, as Sakura and Tsunade's seals had only spread around a small area.",
+      "In an effort to make sure that Sasuke survived until they could fight so that he could kill him personally, Dosu challenged Gaara, Sasuke's first opponent, on the roof top of Kikyō Castle to a fight. Despite Dosu's confidence, Gaara promptly killed him, while Baki and Kabuto Yakushi witnessed it.",
+      "The Fireball Jutsu uses a combination of hand signs in the given order: Serpent, Ram, Monkey, Boar, Horse, Tiger",
+      "Hidan (飛段, Hidan) is an S-rank missing-nin who defected from Yugakure and later joined the Akatsuki. Hidan encountered the Akatsuki, attempted to kill Kakuzu, and managed to destroy one of his hearts. The confrontation led Konan to offer Hidan the chance to join their organisation, which he accepted, mainly because he took an interest in Kakuzu since he was a pioneer in immortality as well",
+      "The Three Tails was first captured by Tobi and Diedara ( Then members of Akatsuki )",
+      "Hinata Uzumaki (うずまきヒナタ, Uzumaki Hinata, née Hyūga (日向)) is a kunoichi and the former heiress of the Hyūga clan. All members born into Hyūga clan possess the Byakugan, a kekkei genkai that gives them extended fields of vision and the ability to see through solid objects and even the chakra circulatory system, amongst other things. Members of this clan also possess the unique ability to expel chakra from any of the tenketsu in their body.",
+      "Deidara ranked 3rd in one official character popularity poll shortly after his debut, just one rank above Naruto. He also ranked higher than any other member of Akatsuki (though at the point that poll was taken, only about half of Akatsuki's members were formally introduced).",
+      "Inoichi was placed in charge of the Intelligence Division of the Allied Forces, which was formed in an effort to tackle with Forth Great Ninja War",
+      "Sakura is like a moving powerhouse. Sakura's strength is enough to destroy buildings or upend the earth, which Naruto constantly refers to as "monstrous strength". Furthermore, she can send chakra throughout her entire body to lift greater mass, and improve her ability to withstand crushing blows."
       ],
   },
 }
