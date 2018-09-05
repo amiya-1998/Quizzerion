@@ -168,7 +168,7 @@ var workingQuiz = {
       "Hinata Uzumaki (うずまきヒナタ, Uzumaki Hinata, née Hyūga (日向)) is a kunoichi and the former heiress of the Hyūga clan. All members born into Hyūga clan possess the Byakugan, a kekkei genkai that gives them extended fields of vision and the ability to see through solid objects and even the chakra circulatory system, amongst other things. Members of this clan also possess the unique ability to expel chakra from any of the tenketsu in their body.",
       "Deidara ranked 3rd in one official character popularity poll shortly after his debut, just one rank above Naruto. He also ranked higher than any other member of Akatsuki (though at the point that poll was taken, only about half of Akatsuki's members were formally introduced).",
       "Inoichi was placed in charge of the Intelligence Division of the Allied Forces, which was formed in an effort to tackle with Forth Great Ninja War",
-      "Sakura is like a moving powerhouse. Sakura's strength is enough to destroy buildings or upend the earth, which Naruto constantly refers to as "monstrous strength". Furthermore, she can send chakra throughout her entire body to lift greater mass, and improve her ability to withstand crushing blows."
+      "Sakura is like a moving powerhouse. Sakura's strength is enough to destroy buildings or upend the earth, which Naruto constantly refers to as \"monstrous strength\". Furthermore, she can send chakra throughout her entire body to lift greater mass, and improve her ability to withstand crushing blows."
       ],
   },
 }
